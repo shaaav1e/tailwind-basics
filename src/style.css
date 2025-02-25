@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* The @apply directive is used to include several Tailwind utility classes */
+
+/* The @theme directive allows you to define theme variables directly in your CSS, influencing which utility classes are available in your project.  */
+@theme {
+    --color-mint-500: #3eb489;
+    --breakpoint-sm:480px;
+    --color-twitter-blue:#1DA1F2;
+  }

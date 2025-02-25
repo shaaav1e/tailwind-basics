@@ -1,0 +1,19 @@
+npm init-y
+npm install -D tailwindcss
+npx tailwindcss init
+
+Create Public folder and create index.html in it
+
+tailwind.config.js ki file mei, content me edit ->   ./public/index.html
+
+Create Src Folder
+
+Create input.css inside Src Folder
+
+npx tailwindcss -i ./src/input.css -o ./public/style.css --watch
+
+Good to go!
+
+
+ERROR FIX OF 'tailwindcss' is not recognized as an internal or external command:
+npm install tailwindcss @tailwindcss/cli

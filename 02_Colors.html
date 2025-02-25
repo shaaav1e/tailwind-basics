@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <link rel="stylesheet" href="/src/style.css">    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<!-- Tailwind -->
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<!-- Default Colors: -->
+
+<!-- white, black , red, green , blue , orange, yellow , purple , lime ,
+ emerlard, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc,
+ neutral, stone , amber -->
+
+<!-- black & white dont have shades: like text-red-500 (500 is a shade) 
+Shades are from : 50 - 900 -->
+
+<!-- 1) TEXT COLORS -->
+  <p class="text-red-500 text-xl">Tailwind.</p>
+  <p class="text-slate-500 text-3xl pt-2">Trying Slate!</p>
+
+<!-- 2) BACKGROUND COLORS -->
+<p class="mt-3 bg-slate-500 text-red-900">Trying Background colors</p>
+<!-- Applying padding here will increase text width -> (From color on top) -->
+<p class="mt-6 bg-black text-green-200">Black background with <span class="text-white">WHITE</span> text</p>
+
+<!-- 3) TEXT UNDERLINE -->
+ <p class="underline pt-3 decoration-yellow-400 text-3xl">UNDERLINE</p>
+
+<!-- 4) BORDER COLORS -->
+ <input type="text" class="border border-green-200 mt-3" placeholder="Enter your email">
+<!-- Border se border aega and then color k lye see above -->
+
+<!-- 5) Divide Colors -->
+<div class="divide-y mt-6 divide-red-500"> 
+    <!-- Adds divider (a line) b/w Items -->
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<!-- 6) Outline Colors -->
+<button class="outline outline-red-500 mt-6">Btn</button>
+<br>
+<!-- 7) Box Shadow Colors - Opacity default is 100 but can set it manually -->
+<button class="mt-3 mx-auto block py-2.5 px-5 rounded-md shadow-lg shadow-purple-500/80 bg-slate-300 text-black">Submit</button> 
+
+<!-- 8) Accent Colors -->
+
+<h1 class="text-lg font-bold mt-6">Hobbies:</h1>
+<div class="flex flex-col gap-2 divide-y divide-red-600">
+  <div class="flex items-center gap-2">
+    <input type="checkbox" id="cricket">
+    <label for="cricket">Cricket</label>
+  </div>
+  <div class="flex items-center gap-2">
+    <input type="checkbox" id="football" class="accent-red-500">
+    <label for="football">Football</label>
+  </div>
+  <div class="flex items-center gap-2">
+    <input type="checkbox" id="basketball" class="accent-purple-500">
+    <label for="basketball">Basketball</label>
+  </div>
+</div>
+<!-- To make label heading and checkbox alligned we need to turn these into flex items separately -->
+
+<!-- 9) Arbitrary Colors -->
+
+<div class="mt-4 bg-[#427fab]">Swz</div>
+<div class="mt-4 bg-[rgb(255,0,0)]">Swz</div>
+<div class="mt-4 bg-[steelblue]">Sup?</div>
+<h1 class="custom mt-3">Visit Input.css</h1>
+</body>
+
+
+</html>

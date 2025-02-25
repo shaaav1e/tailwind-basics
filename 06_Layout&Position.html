@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout&Position</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">Absolute</div>
+    </div>
+
+    <!-- Top Left Corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+        Top Left Corner
+      </div>
+    </div>
+
+    <!-- Top Right Corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-18 bg-yellow-300">
+        Top Right Corner
+      </div>
+    </div>
+
+    <!-- Bottom Left Corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300">
+        Bottom Left
+      </div>
+    </div>
+
+    <!-- Bottom Right Corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+        Bottom Right
+      </div>
+    </div>
+
+    <!-- Span Top Edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300 mt-3">
+        Top Edge
+      </div>
+    </div>
+
+    <!-- Span Left Edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 left-0 bg-yellow-300 mt-3 w-16">
+        Left Edge
+      </div>
+    </div>
+
+    <!-- Span right Edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 right-0 bg-yellow-300 mt-3 w-16">
+        Right Edge
+      </div>
+    </div>
+    <!-- Span bottom Edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300 mt-3">
+        Bottom Edge
+      </div>
+    </div>
+  </body>
+</html>

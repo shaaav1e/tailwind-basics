@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform/Transition/Translate</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="container mx-auto text-center mt-20">
+        <!-- Transition : Controls how smoothly something changes overtime like color,position etc (ktni smoothly koi cheez change hoti hay)
+         UseCase    : When you want animations on hover etc
+         -->
+        <div class="transition duration-500 bg-blue-300 hover:bg-red-500 mb-10">Hover - Tansition</div>
+        <!-- Transform: Changes an element's position,rotation or size.
+         UseCase  : When you want to move, rotate or scale an element - like make an element bigger -->
+        <div class="transform text-red-500 hover:scale-110 mb-10">Hover or me to see - Transform</div>
+
+        <!-- Translate: Move an element left/right (x-axis) or up/down (Y-axis) -->
+        <div class="transition-transform duration-300 hover:translate-x-4 mb-10">
+            Hover to Move Right
+        </div>
+
+        <!-- All together -->
+        <div class="transition-transform duration-300 hover:translate-y-2 hover:text-red-500 mb-10">
+            All three
+        </div>
+
+
+        <!-- 3 buttons having some css applied to see how above work -->
+        <button
+            class="border bg-blue-500 rounded-md text-white px-4 py-2 hover:bg-blue-700 transition-transform duration-300 hover:-translate-y-1/2">
+            Click me so i can go above -ive y axis
+        </button> <br>
+        <button
+            class="border bg-blue-500 rounded-md text-white px-4 py-2 -rotate-12 transition-transform duration-300 mt-10 mb-10">Rotate:12</button>
+        <br>
+        <button
+            class="border bg-blue-500 rounded-md text-white px-4 py-2 hover:rotate-180 transition-transform duration-300 mt-10 mb-10">180 degree</button>
+        <img src="/public/images/transition.png" alt="properties">
+    </div>
+</body>
+
+</html>

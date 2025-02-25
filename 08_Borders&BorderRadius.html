@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container & Spacing</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Border Width & Colors -->
+    <div class="w-96 m-3 p-5 border shadow-lg shadow-red-300 rounded-4xl">
+      Rounded Border
+    </div>
+
+    <div class="w-96 m-3 p-5 border-y-2 shadow-lg shadow-red-300">
+      Border on y-axis
+    </div>
+
+    <div
+      class="w-96 m-3 p-5 border-x-2 shadow-lg shadow-red-300 transition duration-300 hover:translate-y-1/2"
+    >
+      Border on x-axis
+    </div>
+
+    <div
+      class="w-96 m-3 p-5 border-r-2 shadow-lg shadow-red-300 transition duration-300 hover:translate-y-1/2"
+    >
+      Border on right-side
+    </div>
+
+    <div
+      class="w-96 m-3 p-5 border-l-2 shadow-lg shadow-red-300 transition duration-300 hover:translate-y-1/2"
+    >
+      Border on left-side
+    </div>
+
+    <!-- Outline , Not much Used -->
+    <button class="outline-4 outline-red-400">Click</button>
+  </body>
+</html>

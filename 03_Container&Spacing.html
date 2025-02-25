@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container & Spacing</title>
+    <link rel="stylesheet" href="/src/style.css">    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<!-- Tailwind -->
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="container">
+    <article>
+        <h3>Article One</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum rerum totam et adipisci culpa possimus. Magni, culpa libero a assumenda tempore itaque incidunt cumque, debitis nobis in vel repellat.</p>
+    </article>
+  </div>
+</div>
+
+<!-- A container is a wrapper element used to limit the width of content and center it within the page.
+It prevents content from stretching too wide on larger screens while keeping it readable. -->
+
+
+
+
+<!-- Container thing i do in Vanilla CSS -->
+ <div class="max-w-[80%] mx-auto mt-4">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, et nemo? Reprehenderit perferendis consectetur dolore. Ducimus modi qui debitis vitae voluptate, suscipit nobis exercitationem nesciunt voluptatum voluptates? Sed, assumenda aliquid.</p>
+ </div>
+</body>
+</html>
+
+<!-- Better Approach -->
+<div class="container mx-auto mt-4">
+    <!-- Container is centered with responsive width due to container class. -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, et nemo? Reprehenderit perferendis consectetur dolore. Ducimus modi qui debitis vitae voluptate, suscipit nobis exercitationem nesciunt voluptatum voluptates? Sed, assumenda aliquid.</p>
+
+</div>
+
+<!-- Difference between Above two -->
+<img class="my-12" src="./images/Container&spacing.png">
+
+
+<!-- Margin is the outside -->
+
+<div class="mt-4 bg-slate-500">I am margin</div>
+
+<div class="ml-10">Margin Left</div>
+<div class="bg-slate-500 mr-14">Margin Right</div>
+
+
+<div class="mt-[20px] bg-red-100">Arbitary Value - Setting custom</div>
+
+<div class="text-center">Margin vs Padding</div>
+<!-- Padding is the inside -->
+
+<div class="pt-4 bg-slate-500">I am padding</div>
+
+
+
+<h1 class="text-xl font-bold mt-4">Spacing - X:</h1>
+
+<!-- Space b/w X --> 
+<!-- Works like gap property -->
+ <div class="flex mt-4 space-x-4">
+    <div>Home</div>
+    <div>About Us</div>
+    <div>Contact</div>
+    <div>Products</div>
+ </div>
+
+
+<h1 class="text-xl font-bold mt-4">Spacing - Y:</h1>
+<!-- Space b/w Y-->
+<div class="flex flex-col mt-4 space-y-4">
+    <div>Home</div>
+    <div>About Us</div>
+    <div>Contact</div>
+    <div>Products</div>
+</div>
+
+<!-- Breakpoinsts for Container 
+container	None	width: 100%;
+sm (640px)	    max-width: 640px;
+md (768px)	    max-width: 768px;
+lg (1024px)	    max-width: 1024px;
+xl (1280px)	    max-width: 1280px;
+2xl (1536px)	  max-width: 1536px; 
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block/Inline</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div class="bg-red-400 text-black">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores,
+      <span class="font-bold inline"> This is inline </span> libero ratione
+      molestiae
+      <span class="font-bold inline-block">This is inline-block</span>
+      facilis accusantium sunt quo molestias ea illo sunt quo molestias ea illo
+      sunt quo molestias ea illo sunt quo
+      <span class="font-bold block text-center">This is block</span>
+      molestias ea illo sunt quo molestias ea illo sunt quo molestias ea illo
+      <span class="font-bold hidden">Hidden</span>
+      molestias ea illo sunt quo molestias ea illo sunt quo molestias ea illo
+    </div>
+
+    <div class="mt-2">
+      <span class="font-bold">Block:</span> Takes the full width available and
+      starts on a new line. <br />
+      <span class="font-bold">Inline:</span> Takes only as much width as needed
+      and stays in line with other elements.<br />
+      <span class="font-bold">Inline-block:</span> Behaves like inline but
+      allows setting width and height.<br />
+      <span class="font-bold">Inline elements:</span> ❌ can't have width and
+      height (they only take space as per content). <br />
+      <span class="font-bold">Block elements:</span> ✅ can have width and
+      height (they stretch full width by default). <br />
+      <span class="font-bold">Inline-block:</span> ✅ can have width and height
+      but stays inline.
+
+      <!-- Z-index -->
+      <div class="relative h-36 mt-3">
+        <div class="absolute left-10 w-24 h-24 bg-blue-500">1</div>
+        <div class="absolute w-24 h-24 bg-blue-100 left-30">2</div>
+        <div class="absolute w-24 h-24 bg-blue-200 left-40 z-51">3</div>
+        <div class="absolute w-24 h-24 bg-blue-300 left-50 z-50">4</div>
+        <div class="absolute w-24 h-24 bg-blue-400 left-60">5</div>
+      </div>
+
+      <!-- Floats -->
+      <div class="w-1/2">
+        <img class="h-48 w-64 float-right" src="homystic_pc.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
